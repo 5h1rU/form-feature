@@ -42,7 +42,7 @@ const formFields = {
       error: 'please enter a role',
       description: 'your role',
       type: 'text',
-      required: true,
+      required: false,
     },
     3: {
       id: 3,
@@ -53,7 +53,7 @@ const formFields = {
       error: 'please enter a valid phone',
       description: 'your phone',
       type: 'text',
-      required: false,
+      required: true,
     },
     4: {
       id: 4,
