@@ -158,7 +158,7 @@ function InputControl(props: Props): JSX.Element {
           width: width || '100%',
           ...style,
         }}
-        onChange={handleChange}
+        onChange={onChange}
         onFocus={onFocus}
         onBlur={(e) => {
           if (onBlur) onBlur(e.target.value);
@@ -186,10 +186,7 @@ export function Input(props: Props): JSX.Element {
   return (
     <StyledInputWrapper type={type}>
       {/* eslint-disable-next-line */}
-      <InputControl
-        {...props}
-        style={styles}
-      />
+      <InputControl {...props} style={styles} />
       <div className="input-icon">{icon}</div>
       {appendText ? (
         <StyledAppendedText ref={targetRef}>
